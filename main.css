@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.Title{
+    color:blue;
+    font-family: fantasy;
+    background-color: pink;
+    width: 50%;
+    height: 100%;
+    
+     
+}
+#bodySection{
+    font-family: fantasy;
+    background-color: brown;
+    
+}
+#par{
+    color: green;
+    background-color: yellow;
+    margin:20px;
+    padding:50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 500px;
+}
+body{
+    font-family: sans-serif;
+}
+.main-header{
+    width: 100%;
+    background-color: #2ddf5c;
+    padding:8px 16px;
+
+}
+.main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.main-nav__item{
+    display:inline-block; /*inline-block hem arka arkaya sıralanmasını sağlar hem de margintop peddingtop gibi özelli kleri kullanmamızı sağlar*/
+    
+    margin: 16px;
+}
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-nav{
+    display: inline-block;
+    text-align: right   ;
+    vertical-align: middle;
+    width: calc(100% - 70px);
+}
+.main-nav__items{
+    padding: 0;
+    margin: 0;
+}
+.main-nav__item a{
+    text-decoration: none;
+    color: #0e4f1f;
+}
+.main-nav__item a::after{
+    content: " (Link)";
+    color: red;
+}
+.main-nav__item a:hover{
+color:white;
+}
+.main-nav__item a:active{
+    color: white;
+}
+
+p::first-letter{
+    font-weight: bold;
+    font-size: 21px;
+}
