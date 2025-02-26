@@ -23,6 +23,39 @@ body{
  width: 30%;
  vertical-align: middle;
 }
+.plan--highlighted{
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);/**/
+}
+#plans{
+ background-color: white;
+}
+.plan__annotation{
+    padding: 8px;
+    color: #19b84c;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.plan__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.plan__features li{
+    margin: 8px 0px;
+}
+.plan__title{
+    color: #0e4f1f;
+}
+.plan__price{
+    color: #858585;
+}
+
+.plan--highlighted .plan__price{
+    color: rgb(254, 220, 28) ;
+}
 #product-overview{
     color: white;
     background: url("freedom.jpg");
@@ -35,6 +68,10 @@ body{
     background-color: brown;
     
 }
+.section-title{
+    text-align: center;
+    color: lime;
+}
 #par{
     color: green;
     background-color: yellow;
@@ -44,6 +81,21 @@ body{
     border-color: black;
     border-width: 5px;
     width: 500px;
+}
+.button{
+    background-color: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover,
+.button:active{
+    color:#0e4f1f;
+    background-color: white;
 }
 .main-header{
     width: 100%;
