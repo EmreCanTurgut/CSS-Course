@@ -30,6 +30,7 @@ body{
 }
 #plans{
  background-color: white;
+ text-align:center;/*text align block elemente veya child elementi inline-block elementse etki eder*/
 }
 .plan__annotation{
     padding: 8px;
@@ -66,11 +67,10 @@ body{
 #bodySection{
     font-family: fantasy;
     background-color: brown;
-    
 }
 .section-title{
-    text-align: center;
     color: lime;
+    text-align: center;
 }
 #par{
     color: green;
@@ -97,6 +97,42 @@ body{
     color:#0e4f1f;
     background-color: white;
 }
+.button:focus{
+    outline: none; /*?*/
+}
+#key-features {
+    background-color: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+#key-features .section-title{
+    color: white;
+    margin: 32px;
+}
+.key-feature__list{
+    list-style: none;
+}
+.key-feature{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+.key-feature__description{
+    text-align:center ;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.key-feature__image{
+    background: #ffcede;
+    width: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    height: 128px ;
+    margin: auto; /*genişliği belirlenmiş öğerelerde işe yarar*/
+   /*display:inline-block yapıp parentindan text-align: center yaparsak da ortalar*/;
+}
+
 .main-header{
     width: 100%;
     background-color: #2ddf5c;
@@ -158,9 +194,4 @@ border-bottom: 3px solid white;
     background-color: white;
     border: none;
 
-}
-
-p::first-letter{
-    font-weight: bold;
-    font-size: 21px;
 }
