@@ -1,0 +1,48 @@
+main{
+    
+    padding-top: 32px;
+}
+.background{
+    background: url("../images/plans-background.jpg");
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.plans{
+    margin: 16px 0px ;
+    width: 80%;
+    padding: 15px;
+    border: 4px solid #0e4f1f;
+    border-left: none;
+    background-color: rgba(174, 237, 174);
+    z-index: 0;
+}
+.plans:hover,
+.plans:active{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #f3d2d2;
+}
+.plans a{
+    text-decoration: none;
+    display: block;
+    color:inherit;
+    padding: 32px;
+}
+.plans a h2{
+color: gray;
+}
+.plans a p{
+    border: 1px solid;
+    padding: 16px;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+.plans-highlighted{
+    background-color: rgba(2, 120, 2, 0.95);
+}
+.plans-highlighted  h1{
+    color: white;
+}
+.plans-highlighted a h2{
+    color: rgb(193, 193, 193);
+}

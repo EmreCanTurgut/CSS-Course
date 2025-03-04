@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.main-header{
+    position: fixed;
+    width: 100%;    
+    background-color: #2ddf5c;
+    padding:8px 16px;
+
+}
+.main-header__brand{
+
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.main-nav__item{
+    display:inline-block; /*inline-block hem arka arkaya sıralanmasını sağlar hem de margintop peddingtop gibi özelli kleri kullanmamızı sağlar*/
+    
+    margin: 16px;
+}
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-nav{
+    display: inline-block;
+    text-align: right   ;
+    vertical-align: middle;
+    width: calc(100% - 74px);
+}
+.main-nav__items{
+    padding: 0;
+    margin: 0;
+}
+.main-nav__item a{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+    
+}
+/*
+.main-nav__item a::after    {
+    content: " (Link)";
+    color: red;
+}*/
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+color:white;
+border-bottom: 3px solid white;
+}
+.main-nav__item--cta a{
+    color: white;
+    background-color: red;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color: red;
+    background-color: white;
+    border: none;
+
+}
+.main-footer{
+    background-color: black;
+    margin-top: 48px;
+    padding: 32px;
+}
+.main-footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.main-footer li{
+    display: inline-block;
+    color: white;
+    margin: 0px 16px;
+}
+.main-footer a{
+    text-decoration: none;
+    color: white;
+}
+.main-footer a:hover,
+.main-footer a:active{
+color: #ccc;
+}
+.button{
+    background-color: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button:hover,
+.button:active{
+    color:#0e4f1f;
+    background-color: white;
+}
+.button:focus{
+    outline: none; /*?*/
+}
