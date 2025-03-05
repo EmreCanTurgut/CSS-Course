@@ -7,15 +7,24 @@ main{
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: -1;/* z indeksi default olarak 0 dır ,position:static elemanların z indexi değişmez*/
+}
+.package__bandage{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    margin:20px ;
+    color: white;
 }
 .plans{
+    position: relative;
     margin: 16px 0px ;
     width: 80%;
     padding: 15px;
     border: 4px solid #0e4f1f;
     border-left: none;
     background-color: rgba(174, 237, 174);
-    z-index: 0;
+    
 }
 .plans:hover,
 .plans:active{
