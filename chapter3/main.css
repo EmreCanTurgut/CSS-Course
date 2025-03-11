@@ -54,9 +54,11 @@
 #product-overview{
     color: white;
     background: url("./images/freedom.jpg");
+    border: 5px dashed red;
     width: 100%;
     height: 512px;
     padding: 10px;
+    background-origin: border-box ;
 }
 #bodySection{
     font-family: fantasy;

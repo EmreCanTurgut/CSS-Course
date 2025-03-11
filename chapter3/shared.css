@@ -7,19 +7,27 @@ body{
     box-sizing: border-box;
 }
 .main-header{
+    top: 0px;
     position: fixed;
     width: 100%;    
     background-color: #2ddf5c;
-    padding:8px 16px;
+    padding:2px 16px;
     z-index: 1;
+    
     
 }
 .main-header__brand{
-
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    width: 22px;
+    display: inline-block;
+}
+.main-header__brand img{
+
+    width:100%;
+
 }
 .main-nav__item{
     display:inline-block; /*inline-block hem arka arkaya sıralanmasını sağlar hem de margintop peddingtop gibi özelli kleri kullanmamızı sağlar*/
