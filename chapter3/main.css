@@ -53,8 +53,11 @@
 }
 #product-overview{
     color: white;
-    background: url("./images/freedom.jpg");
-    border: 5px dashed red;
+    /*background: url("./images/freedom.jpg");*/
+    /*background-image: linear-gradient(to bottom, red, white);
+    */
+    background-image: linear-gradient(180deg,darkgreen,green,lime, white);
+
     width: 100%;
     height: 512px;
     padding: 10px;
@@ -107,7 +110,9 @@
     width: 128px;
     border: 2px solid #424242;
     border-radius: 50%;
+    padding: 20px;
     height: 128px ;
     margin: auto; /*genişliği belirlenmiş öğerelerde işe yarar*/
    /*display:inline-block yapıp parentindan text-align: center yaparsak da ortalar*/;
 }
+
