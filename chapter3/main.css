@@ -56,7 +56,7 @@
     /*background: url("./images/freedom.jpg");*/
     /*background-image: linear-gradient(to bottom, red, white);
     */
-    background-image: linear-gradient(180deg,,transparent);
+    background-image: linear-gradient(180deg,green,transparent);
 
     width: 100%;
     height: 512px;
