@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saat Gösterimi</title>
+  </head>
+  <body>
+    <div id="saat"></div>
+
+    <script>
+/*      function saat() {
+        let zaman = new Date();
+        let saat = zaman.getHours();
+        let dakika = zaman.getMinutes();
+        let saniye = zaman.getSeconds();
+
+        if (saat.toString().length == 1) {
+            saat = "0" + saat
+        }
+
+        if (dakika.toString().length == 1) {
+            dakika = "0" + dakika
+        }
+
+        if (saniye.toString().length == 1) {
+            saniye = "0" + saniye
+        }
+
+        document.getElementById("saat").innerHTML = `${saat}:${dakika}:${saniye}`
+
+        //zamanı 1 saniye aralıklarla yenile
+       // window.setTimeout("saat()", 1000);
+      }
+      //belge yüklendiğinde saati göster
+      //window.onload = saat;
+*/
+      const crtelmnt=()=>{
+        
+        let zaman = new Date();
+        let saat = zaman.getHours();
+        let dakika = zaman.getMinutes();
+        let saniye = zaman.getSeconds();
+
+        if(saat.toString().length ==1 ){
+          saat=`0${saat}`
+        }
+        if(dakika.toString().length == 1){
+          dakika=`0${dakika}`
+        }
+        if(saniye.toString().length ==1 ){
+          saniye=`0${saniye}`
+        }
+        calendar=document.getElementById("saat");
+        calendar.innerHTML=`${saat}:${dakika}:${saniye}`
+        calendar.textContent=`${saat}:${dakika}:${saniye}`
+        window.setTimeout(crtelmnt, 1000)
+      }
+      window.onload=crtelmnt;
+   
+    </script>
+  </body>
+</html>
