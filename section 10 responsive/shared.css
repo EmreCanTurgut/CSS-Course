@@ -17,8 +17,11 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
 }
-
+.parent-header{
+  display: flex;
+}
 .main-header {
+  align-content: center;
   width: 100%;
   position: fixed;
   top: 0;
@@ -26,6 +29,8 @@ body {
   background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
+  height: 64px;
+  
 }
 
 .main-header > div {
@@ -88,6 +93,9 @@ body {
   .main-nav__items{
     display: inline-block;
   }
+    .toggle-button{
+      display: none;
+    }
 }
 
 .main-nav__item {
