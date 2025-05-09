@@ -6,14 +6,25 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  /* padding-top: 3.5rem; */
+  height: 100%;
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.5rem;
+  /* grid-row: 2 / 3; */
+  grid-area: main;
 }
 
 .backdrop {
@@ -34,13 +45,11 @@ main {
   left: 0;
   background: #2ddf5c;
   padding: 0.5rem 1rem;
-  z-index: 10;
+  z-index: 60;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 .toggle-button {
   width: 3rem;
@@ -68,13 +77,12 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  
   /* width: 20px; */
- 
 }
 
 .main-header__brand img {
   height: 2.5rem;
+  vertical-align: middle;
   /* width: 100%; */
 }
 
@@ -83,10 +91,10 @@ main {
 }
 
 .main-nav__items {
-  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
@@ -130,12 +138,7 @@ main {
   }
 
   .main-nav {
-   /* display: inline-block;
-    text-align: right;
-    width: calc(100% - 44px);
-    vertical-align: middle;
-  */
-  display: flex;
+    display: flex;
   }
 }
 
@@ -143,20 +146,20 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
 }
 
 .main-footer__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
-  
   margin: 0.5rem 0;
 }
 
@@ -182,16 +185,15 @@ main {
 }
 
 .mobile-nav__items {
-  display: flex;
-  flex-direction: column;
-  justify-content:center ;
-  align-items: center;
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 0% auto;
+  margin: 0 auto;
   padding: 0;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -238,8 +240,9 @@ main {
   .main-footer__link {
     margin: 0 1rem;
   }
- .main-footer__links{
-  flex-direction: row;
-  justify-content: center;
- } 
+
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
